@@ -1,8 +1,84 @@
 /* 
 Add your styles to this file only. Update the following line with your full name and username on GitHub.
 
-Author:
-Your Name | Username on GitHub
+Author: Yudhvir Singh
+Your Name | Username on GitHub    BitWiseNotation
 
 */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.up-arrow {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+
+.container article > div {
+    position: relative;
+}
+
+.container article img {
+    width: 100%;
+    display: block;
+}
+
+.container article div h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 1rem;
+}
+
+.sides a {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 25px);
+}
+
+.sides .left {
+    left: 1rem;
+}
+
+.sides .right {
+    right: 1rem;
+}
+
+a:hover {
+    color: var(--rose-700);
+}
+
+.sides a:hover {
+    border-color: var(--rose-700);
+    background-color: var(--slate-200);
+}
+
+.up-arrow:hover {
+    background-color: var(--slate-800);
+}
